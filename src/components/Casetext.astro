@@ -1,4 +1,8 @@
 ---
+import Button2 from "../components/Button2.astro";
+const img = Astro.props.img;
+const header = Astro.props.header;
+const text = Astro.props.text;
 import Button1 from "./Button1.astro"
 ---
 
@@ -32,7 +36,7 @@ import Button1 from "./Button1.astro"
 </div>
 <div class="submit"> 
     <input type="text" placeholder="Your Email Adress">
-    <button>Send Message</button>
+   <Button2 text="Subscribe"/>
  </div>
  </div>
 
