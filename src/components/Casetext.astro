@@ -57,6 +57,7 @@ import Button1 from "./Button1.astro"
         display: grid;
         place-items: center;
         gap: 3.2rem;
+   
     }
 
     .grid {
@@ -73,10 +74,35 @@ import Button1 from "./Button1.astro"
     }
     @media screen and (max-width: 768px) {
     .grid {
-        grid-template-columns: 1fr; /* Change to single column layout */
-        padding: 1rem; /* Adjust padding for smaller screens */
+        grid-template-columns: 1fr; 
+        padding: 1rem; 
     }
+
+        p {
+               max-width: 45ch;
+           
+               
+            }
+
+             ul {
+               max-width: 52ch;
+               padding: 1rem;
+           
+               
+            }
+
+    .box {
+         width: 100vw;
+         display:  flex;
+         flex-direction: column;
+         gap: 1rem;
+    }
+
+  
+  
+
 }
+
 
     .submit {
         display: flex;
@@ -85,7 +111,7 @@ import Button1 from "./Button1.astro"
 
     .box {
         margin-top: 10rem;
-        width:68rem;
+        max-width:68rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -121,7 +147,7 @@ color: #FFF;
         padding: 24px;
   border-radius: 3.375rem;
 border: 1px solid #C1C1C1;
-width: 18rem;
+max-width: 18rem;
 
 
 background: #FFF;
@@ -130,13 +156,20 @@ background: #FFF;
    
 
 .container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: start;
-   width: 47rem;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start; 
+    max-width: 47rem;
+    margin: 0 auto; 
+    padding: 1rem 1rem; 
 }
+
+
+
+    
+
 
 
 
@@ -146,6 +179,7 @@ background: #FFF;
 
 p {
     line-height: 190%;
+    text-wrap: wrap;
 }
 
 img {
@@ -158,8 +192,14 @@ img {
 .imgcontainer {
     display: grid;
     place-items: center;
-    width: 43rem;
+    max-width: 43rem;
     padding-top: 2rem;
     margin: 0 auto; /* Center horizontally */
 }
+
+  @media screen and (max-width: 930px) {
+        
+        }
+
+
 </style>

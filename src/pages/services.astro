@@ -87,11 +87,33 @@ import "../styles/global.css"
 
 <style>
 
+
+            @media screen and (max-width: 868px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      
+    
+    }
+
+    .pile {
+        display: flex;
+          justify-content: center;
+          align-items: center;
+  gap: 0rem;
+    }
+
+    header p {
+        max-width: 40ch;
+    }
+
+    }
+
     body {
         overflow-x: hidden;
         background-color: var(--secondary02);
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   grid-template-columns:
     1fr minmax(0, 1200px) 1fr;
   
@@ -114,7 +136,7 @@ import "../styles/global.css"
 
 
 .kort {
-    margin-top: 2rem;
+   
     width: 100vw;
     grid-column: 1 / -1;
     padding-bottom: 6rem;
@@ -159,11 +181,7 @@ import "../styles/global.css"
 
 
 
-    .casetop {
-        margin-top: -4rem;
-        display: grid;
-        place-items: center;
-    }
+  
 
 
     .email {

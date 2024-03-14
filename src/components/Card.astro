@@ -13,7 +13,7 @@ const text = Astro.props.text;
             <p>{text}</p>
             <div class="mere">
                 <a href="/casesingle">Read more</a>
-                <img src="" alt="">
+                <img src="/images/vej.svg" alt="">
             </div>
         </div>
     </div>     
@@ -37,6 +37,8 @@ const text = Astro.props.text;
 
 
 }
+
+
 .cardtext {
     display: block;
     
@@ -69,13 +71,19 @@ text-transform: uppercase;
     align-items: start;
 }
 
+a {
+    color: inherit; 
+    text-decoration: none; 
+    font-weight: 600;
+}
 
 
 
 
         .mere {
             display: flex;
-            justify-content: space-between;
+            gap: 1rem;
+         
         }
 
     

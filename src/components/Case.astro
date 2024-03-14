@@ -52,7 +52,7 @@ const text = Astro.props.text;
     .boks {
         border-radius: 1.875rem;
         background: #181818;
-        width: 50rem;
+        max-width: 47rem;
         padding: 2.3125rem 3.75rem;
         display: flex;
         align-items: flex-start;
@@ -62,4 +62,27 @@ const text = Astro.props.text;
         
         
     }
+    img {
+        max-width: 100vw;
+    }
+
+        @media screen and (max-width: 768px) {
+    img {
+        max-width: 100vw;
+    }
+
+    .boks {
+        max-width: 90vw;
+        margin-top: 0rem;
+       
+         
+        
+    }
+
+
+
+  
+  
+
+}
 </style>

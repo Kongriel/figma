@@ -55,23 +55,24 @@ import "../styles/global.css"
         place-items: center;
 }
     .casetop {
-        margin-top: 2rem;
+ 
         display: grid;
         place-items: center;
     }
 	body{
                      display: grid;
              place-items: center;
-  gap: 5rem;
+  gap: 3rem;
   grid-template-columns:
     2fr minmax(0, 1000px) 2fr;
+    	overflow-x: hidden;
+        background-color: var(--secondary02);
   
   > * {
     grid-column: 2;
   }
 
-		overflow-x: hidden;
-        background-color: var(--secondary02);
+	
 		
 	}
 
@@ -98,27 +99,14 @@ import "../styles/global.css"
 		padding: 6.5rem;
 	}
 
-	.person {
-        margin-top: -10rem;
 
-	padding: 6.5rem;
-    padding-top: 0.5rem;
- 	background-color: var(--secondary02);
-
-	}
 
     .top {
                      display: grid;
                      place-items: center;
                      align-items:  start;
            
-  gap: 5rem;
-  grid-template-columns:
-    2fr minmax(0, 1000px) 2fr;
-  
-  > * {
-    grid-column: 2;
-  }
+
     }
 
 

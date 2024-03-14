@@ -36,8 +36,8 @@ figure::before {
   z-index: -1;
   content: '';
   position: absolute;
-  top: -40px; /* Adjust as needed */
-  left: 420px; /* Adjust as needed */
+  top: -40px; 
+  left: 490px; 
   width: calc(var(--square-count) * 1.34rem - .67rem);
   height: calc(var(--square-count) * 1.34rem - .67rem);
   background: linear-gradient(135deg, #BE965D, #976F40, #C99B61, #F0BE7B , #FFCB85, #EEBC79, #C0935B, #976F40) 0 0 / 100% 100%;
@@ -50,11 +50,45 @@ figure::after {
   content: '';
   position: absolute;
   left: -3rem;
-  bottom: .1rem;
+  bottom: -2rem;
   background: green;
   width: 230px;
   height: 150px;
   border-radius: 10px;
   z-index: -1;
 }
+
+@media (max-width: 988px) {
+    img {
+        max-width: 40vw;
+    
+    }
+    figure::after {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  bottom: -2rem;
+  background: green;
+  width: 130px;
+  height: 100px;
+  border-radius: 10px;
+  z-index: -1;
+}
+figure::before {
+  --square-count: 10;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: -40px; 
+  left: 190px; 
+  width: calc(var(--square-count) * 1.34rem - .67rem);
+  height: calc(var(--square-count) * 1.34rem - .67rem);
+  background: linear-gradient(135deg, #BE965D, #976F40, #C99B61, #F0BE7B , #FFCB85, #EEBC79, #C0935B, #976F40) 0 0 / 100% 100%;
+  mask:
+    var(--square-pattern) 0 0 / 1.34rem 1.34rem,
+    var(--square-pattern) .67rem .67rem / 1.34rem 1.34rem;
+}
+}
+
+
 </style>
