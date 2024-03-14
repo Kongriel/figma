@@ -1,0 +1,67 @@
+---
+const img = Astro.props.img;
+const header = Astro.props.header;
+const text = Astro.props.text;
+---
+
+
+<div class="cardcontainer">
+    <div class="card">
+  
+            <img class="person" src={img} alt="">
+    
+        <h4>{header}</h4>
+       <p>{text}</p>
+       <div class="icons">
+        <img src="images/Facebook.svg" alt="">
+        <img src="images/Instagram.svg" alt="">
+        <img src="images/Twitter.svg" alt="">
+       </div>
+    </div>
+
+</div>
+
+<style>
+
+   
+ 
+
+    .cardcontainer {
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+       
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        
+    }
+
+
+
+    h4{
+        margin: 0.3rem;
+        text-align: center;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 24rem;
+        display: grid;
+     
+      align-self: center;
+      align-items: center;
+       
+    }
+
+    .person {
+        max-width: 350px;
+    }
+
+</style>
